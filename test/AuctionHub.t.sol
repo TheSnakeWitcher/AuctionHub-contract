@@ -13,7 +13,7 @@ address constant MUMBAI_TOKEN_ADDRESS = 0xA02f6adc7926efeBBd59Fd43A84f4E0c0c91e8
 uint32 constant AUCTION_FEE = 5 ;
 uint32 constant AUCTION_PERIOD = 5 weeks ;
 
-address constant newSeller = makeAddr("seller") ;
+address constant newSeller = address(1) ;
 uint32 constant newAuctionFee = 20 ;
 uint32 constant newAuctionPeriod = 2 weeks ;
 bytes constant MsgOnlyOwner = "Ownable: caller is not the owner" ;
