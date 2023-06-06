@@ -43,7 +43,7 @@ build:
 	forge build --names --sizes --use /bin/solc
 
 data:
-	solc --asm --opcodes --gas --abi --bin $(CONTRACT_SRC) -o $(DATA)/$(CONTRACT_NAME)
+	solc --asm --opcodes --gas --abi --bin $(SRC)/* -o $(DATA)/
 
 ##############################
 # create
