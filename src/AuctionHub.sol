@@ -150,7 +150,7 @@ contract AuctionHub is IERC721Receiver, PausableByOwner, ReentrancyGuard {
         emit AuctionStoped(seller, highestBidder, endPrice);
 
         uint256 fee = auction.fee / 100;
-        escrow.claim(seller, highestBidder, fee);
+        escrow.claim(seller, highestBidder, fee,owner());
         IERC721(auction.itemContract).approve(highestBidder,auction.itemId) ;
     }
 
