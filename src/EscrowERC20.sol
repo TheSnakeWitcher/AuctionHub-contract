@@ -96,13 +96,13 @@ contract EscrowERC20 is Ownable {
      *
      * Emits a {Withdrawn} event.
      */
-    function claim(address seller,address bidder,uint256 fee) public virtual onlyOwner {
+    function claim(address seller,address bidder,uint256 fee,address owner) public virtual onlyOwner {
         uint256 payment = bidOf(seller,bidder) ;
         uint256 ownerPayment = payment * fee ;
         uint256 sellerPayment = payment - ownerPayment ;
 
         token.safeTransferFrom(address(this),seller,sellerPayment) ;
-        token.safeTransferFrom(address(this),owner(),ownerPayment) ;
+        token.safeTransferFrom(address(this),owner,ownerPayment) ;
         emit Withdrawn(seller,bidder,payment);
     }
 
