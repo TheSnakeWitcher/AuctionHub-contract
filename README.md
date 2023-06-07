@@ -1,17 +1,19 @@
 # AuctionHub
 
 
-AuctionHub is an descentralized auction platform.
-**Its purpose is to allow you buy/sell in auctions easily any item**.
+AuctionHub is an decentralized auction platform. **Its purpose is to
+allow you to buy/sell in auctions easily any item**. The contract is
+written in solidity and is deployed on Goerli testnet at address
+`0xE2449a4ea0e0A9FC5D3A53Ce8F31c3b4d4D20067`. Check transaction
+hash `0x6ec6e206abf3005980b693d8652edfbf097613f542f9535972b27f3b871cddaf`.
 
+The ui is a basic svelte app(i am not a front end developer) , code
+here [AuctionHub-ui](https://github.com/TheSnakeWitcher/AuctionHub-ui)
+and the server is written in go and can be found here
+[AuctionHub-server](https://github.com/TheSnakeWitcher/AuctionHub-server)
 
-# Index
-
-
-1. [Process](#Process)
-3. [Documentation](#Documentation)
-3. [Troubleshooting](#Troubleshooting)
-4. [License](#License)
+NOTE: Due to some time problems I could not finish a completely
+      functional app , but any way post the code.
 
 
 # Process
@@ -39,12 +41,6 @@ AuctionHub is an descentralized auction platform.
 
 6. When auction stops bidders(except highest bidder) can withdraw his
    bids or move its to another auction.
-
-
-# Documentation
-
-
-# Troubleshooting
 
 
 # License
